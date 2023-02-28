@@ -1,17 +1,11 @@
-
 {% extends 'flatpages/default.html' %}
+{% block content %}
+
 {% load custom_filters %}
 {% for post in pos %}
-
-{% block title %}
-<p><h1>{{ post.title }}</a></h1>
-{% endblock title %}
-
-{% block content %}
-<p>{{ post.text|truncatechars:20 }}</p>
-<p>{{ post.dateCreation|date:"d M Y" }}</p>
-{% endblock content %}
+    <p><h1><a class="nav-link" href="{% url 'post_detail' post.id %}">{{ post.title }}</a></h1>
+    <p>{{ post.text|truncatechars:20 }}</p>
+    <p>{{ post.dateCreation|date:"d M Y" }}</p>
 {% endfor %}
 
-</body>
-</html>
+{% endblock %}
