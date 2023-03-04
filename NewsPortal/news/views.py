@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import *
 from django.shortcuts import get_object_or_404
 from datetime import datetime
 from .models import *
@@ -8,6 +8,8 @@ from .filters import PostFilter
 from .forms import PostForm
 from django.urls import reverse
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import PermissionRequiredMixin
 
 
 
@@ -37,13 +39,17 @@ class PostDelete(DeleteView):
     template_name = 'delete.html'
     success_url = reverse_lazy('news')
 
-
+class PostCreate(LoginRequiredMixin, CreateView):
+    raise_exception = True
+    form_class = PostForm
+    model = Post
+    template_name = 'create.html'
 
 class PostSearch(ListView):
     model = Post
     ordering = ['title']
     template_name = 'search.html'
-    context_object_name = 'pos'
+    context_object_name = 'post'
 
     def get_queryset(self):
        queryset = super().get_queryset()
@@ -79,6 +85,26 @@ class PostCategory(DetailView):
 class CommentDetail(DetailView):
     model = Comment
     context_object_name = 'Comment'
+
+class PostCreate(PermissionRequiredMixin, CreateView):
+    permission_required = ('simpleapp.add_post',)
+    form_class = PostForm
+    model = Post
+    template_name = 'create.html'
+
+
+class PostUpdate(PermissionRequiredMixin, UpdateView):
+    permission_required = ('simpleapp.change_post',)
+    form_class = PostForm
+    model = Post
+    template_name = 'create.html'
+
+
+class PostDelete(PermissionRequiredMixin, DeleteView):
+    permission_required = ('simpleapp.delete_post',)
+    model = Post
+    template_name = 'delete.html'
+    success_url = reverse_lazy('news/news')
 
 
 
