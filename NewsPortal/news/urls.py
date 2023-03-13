@@ -11,6 +11,9 @@ urlpatterns = [
     path('create/', PostCreate.as_view(), name='create'),
     path('<int:pk>/edit/', PostCreate.as_view(), name='edit'),
     path('<int:pk>/delete/', PostDelete.as_view(), name='delete'),
+    path('subscriptions/', subscriptions, name='subscriptions'),
+    path('categories/<int:pk>', CategoryListView.as_view(), name='category_list'),
+    #path('categories/<int:pk>/subscriptions', name='subscriptions'),
 
 
 

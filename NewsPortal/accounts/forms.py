@@ -8,7 +8,7 @@ from django.core.mail import send_mail
 
 class CustomSignupForm(SignupForm):
     def save(self, request):
-        user = super().save(request)
+        user = super(CustomSignupForm, self).save(request)
         send_mail(
             subject='Добро пожаловать в наш интернет-магазин!',
             message=f'{user.username}, вы успешно зарегистрировались!',
@@ -16,7 +16,6 @@ class CustomSignupForm(SignupForm):
             recipient_list=[user.email],
         )
         return user
-
 
 class SignUpForm(UserCreationForm):
     email = forms.EmailField(label="Email")

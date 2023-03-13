@@ -10,6 +10,10 @@ from django.urls import reverse
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import csrf_protect
+from django.db.models import Exists, OuterRef
+
 
 
 
@@ -24,10 +28,6 @@ class PostList(ListView):
     template_name = 'news.html'
     paginate_by = 10
 
-class PostCreate(CreateView):
-    form_class = PostForm
-    model = Post
-    template_name = 'create.html'
 
 class PostUpdate(UpdateView):
     form_class = PostForm
@@ -106,8 +106,62 @@ class PostDelete(PermissionRequiredMixin, DeleteView):
     template_name = 'delete.html'
     success_url = reverse_lazy('news/news')
 
+@login_required
+@csrf_protect
+def subscriptions(request):
+    if request.method == 'POST':
+        category_id = request.POST.get('category_id')
+        category = Category.objects.get(id=category_id)
+        action = request.POST.get('action')
+
+        if action == 'subscribe':
+            Subscription.objects.create(user=request.user, category=category)
+        elif action == 'unsubscribe':
+            Subscription.objects.filter(
+                user=request.user,
+                category=category,
+            ).delete()
+
+    categories_with_subscriptions = Category.objects.annotate(
+        user_subscribed=Exists(
+            Subscription.objects.filter(
+                user=request.user,
+                category=OuterRef('pk'),
+            )
+        )
+    ).order_by('name')
+    return render(
+        request,
+        'subscriptions.html',
+        {'categories': categories_with_subscriptions},
+    )
 
 
+class CategoryListView(ListView):
+    model = Post
+    template_name = 'category_list.html'
+    context_object_name = 'category_news_list'
+
+    def get_queryset(self):
+        self.postCategory = get_object_or_404(Category, id=self.kwargs['pk'])
+        queryset = Post.objects.filter(postCategory=self.postCategory).order_by('-dateCreation')
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['is_not_subscriber'] = self.request.user not in self.postCategory.subscribers.all()
+        context['category'] = self.postCategory
+        return context
+
+
+@login_required
+def subsribe(request, pk):
+    user = request.user
+    categoru = Category.objects.get(id=pk)
+    categoru.subscribers.add(user)
+
+    message = 'Вы успешно подписались на рассылку новостей категории'
+    return render(request, 'news/subscribe.html', {'category': categoru, 'message': massage})
 
 
 

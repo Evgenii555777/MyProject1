@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.flatpages',
     'django_filters',
-    'news',
+    'django_apscheduler',
+    'news.apps.NewsConfig',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -147,17 +148,23 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_VERIFICATION = 'optional'
 ACCOUNT_FORMS = {"signup": "accounts.forms.CustomSignupForm"}
+
+SITE_URL = 'http://127.0.0.1:8000/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = "pesokshebendostavka"
-EMAIL_HOST_PASSWORD = "zxnllrfcgmzzjyrt"
+EMAIL_HOST_USER = "SkillFactoryTest"
+EMAIL_HOST_PASSWORD = "wjyszegpmnwgvslb"
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
-DEFAULT_FROM_EMAIL = "pesokshebendostavka@yandex.ru"
+APSCHEDULER_DATETIME_FORMAT = 'N j, Y, f:s a'
 
-SERVER_EMAIL = "pesokshebendostavka@yandex.ru"
+APSCHEDULER_RUN_NOW_TIMEOUT = 25
+
+DEFAULT_FROM_EMAIL = "SkillFactoryTest@yandex.ru"
+
+SERVER_EMAIL = "SkillFactoryTest@yandex.ru"
