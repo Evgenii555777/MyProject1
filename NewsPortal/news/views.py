@@ -13,6 +13,9 @@ from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_protect
 from django.db.models import Exists, OuterRef
+#from .task import add
+
+#def new_add(request):
 
 
 
