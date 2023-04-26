@@ -13,6 +13,16 @@ from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_protect
 from django.db.models import Exists, OuterRef
+import logging
+
+logger = logging.getLogger('django')
+
+logger.debug('Debug message')
+logger.info('Info message')
+logger.warning('Warning message')
+logger.error('Error message', exc_info=True)
+logger.critical('Critical message', exc_info=True)
+
 #from .task import add
 
 #def new_add(request):
@@ -165,6 +175,25 @@ def subsribe(request, pk):
 
     message = 'Вы успешно подписались на рассылку новостей категории'
     return render(request, 'news/subscribe.html', {'category': categoru, 'message': massage})
+
+def test_error(request):
+    try:
+        x = 1 / 0  # Это вызовет ошибку ZeroDivisionError
+    except ZeroDivisionError as e:
+        logger = logging.getLogger('django.request')  # Получить логгер 'django.request'
+        logger.error('Ошибка деления на ноль', exc_info=True)  # Запись ошибки в лог
+        return HttpResponse('Ошибка деления на ноль')  # Отправить сообщение об ошибке пользователю
+
+def test_general_log(request):
+    logger = logging.getLogger('django')  # Получить логгер 'django'
+    logger.info('Тестовая запись в general.log')  # Записать тестовое сообщение
+    return HttpResponse('Тестовая запись выполнена')
+
+def test_security_log(request):
+    logger = logging.getLogger('django.security')
+    logger.debug('Тестовая запись в security.log')
+    return HttpResponse('Тестовая запись в security.log создана')
+
 
 
 
