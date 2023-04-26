@@ -1,0 +1,10 @@
+2023-04-25 16:20:20,820 ERROR Ошибка деления на ноль C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x000001D125C2D040>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py", line 181, in test_error
+    x = 1 / 0  # Это вызовет ошибку ZeroDivisionError
+ZeroDivisionError: division by zero
+2023-04-25 16:20:35,694 ERROR Ошибка деления на ноль C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x000001D125EE9F40>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py", line 181, in test_error
+    x = 1 / 0  # Это вызовет ошибку ZeroDivisionError
+ZeroDivisionError: division by zero

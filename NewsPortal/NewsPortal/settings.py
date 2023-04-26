@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os.path
 from pathlib import Path
+import sys
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -62,7 +64,7 @@ MIDDLEWARE = [
 SITE_ID = 1
 
 ROOT_URLCONF = 'NewsPortal.urls'
-import os
+
 
 TEMPLATES = [
     {
@@ -175,3 +177,108 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Europe/Moscow'
+
+CACHES = {
+    'default': {
+        'TIMEOUT': 60,
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'cache_files'), # Указываем, куда будем сохранять кэшируемые файлы! Не забываем создать папку cache_files внутри папки с manage.py!
+    }
+}
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'style' : '{',
+    'formatters': {
+        'console': {
+            'format': '{asctime} {levelname} {message} {pathname} {exc_info}' if not DEBUG else '{asctime} {levelname} {message}',
+            'style': '{',
+        },
+        'general': {
+            'format': '{asctime} {levelname} {module} {message}',
+            'style': '{',
+        },
+        'errors': {
+            'format': '{asctime} {levelname} {message} {pathname} {exc_info}',
+            'style': '{',
+        },
+        'security': {
+            'format': '{asctime} {levelname} {module} {message}',
+            'style': '{',
+        },
+    },
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'console'
+        },
+        'general': {
+            'level': 'INFO',
+            'filters': ['require_debug_false'],
+            'class': 'logging.FileHandler',
+            'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/general.log',
+            'formatter': 'general'
+        },
+        'errors': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/errors.log',
+            'formatter': 'errors'
+        },
+        'security': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs', 'security.log'),
+            'formatter': 'security'
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'filters': ['require_debug_false'],
+            'formatter': 'errors'
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'general'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['console', 'errors', 'mail_admins'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        'django.server': {
+            'handlers': ['console', 'errors', 'mail_admins'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        'django.template': {
+            'handlers': ['console', 'errors'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        'django.db.backends': {
+            'handlers': ['console', 'errors'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        'django.security': {
+            'handlers': ['console', 'security'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    }
+}
