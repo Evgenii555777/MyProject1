@@ -192,7 +192,11 @@ LOGGING = {
     'style' : '{',
     'formatters': {
         'console': {
-            'format': '{asctime} {levelname} {message} {pathname} {exc_info}' if not DEBUG else '{asctime} {levelname} {message}',
+            'format': '{asctime} {levelname} {message}',
+            'style': '{',
+        },
+        'warning': {
+            'format': '{asctime} {levelname} {message} {pathname}',
             'style': '{',
         },
         'general': {
@@ -203,6 +207,7 @@ LOGGING = {
             'format': '{asctime} {levelname} {message} {pathname} {exc_info}',
             'style': '{',
         },
+
         'security': {
             'format': '{asctime} {levelname} {module} {message}',
             'style': '{',
@@ -232,6 +237,18 @@ LOGGING = {
         },
         'errors': {
             'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/errors.log',
+            'formatter': 'errors'
+        },
+        'errors': {
+            'level': 'CRITICAL',
+            'class': 'logging.FileHandler',
+            'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/errors.log',
+            'formatter': 'errors'
+        },
+        'errors': {
+            'level': 'CRITICAL',
             'class': 'logging.FileHandler',
             'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/errors.log',
             'formatter': 'errors'
