@@ -14,6 +14,9 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_protect
 from django.db.models import Exists, OuterRef
 import logging
+from django.utils.translation import gettext as _
+from django.shortcuts import render
+
 
 logger = logging.getLogger('django')
 
@@ -195,5 +198,15 @@ def test_security_log(request):
     return HttpResponse('Тестовая запись в security.log создана')
 
 
+class Index(View):
+    def get(self, request):
+        # . Translators: This message appears on the home page only
+        models = MyModel.objects.all()
+
+        context = {
+            'models': models,
+        }
+
+        return HttpResponse(render(request, 'index2.html', context))
 
 

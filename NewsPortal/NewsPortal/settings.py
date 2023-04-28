@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
+    'django.contrib.redirects',
+    'django.contrib.sitemaps',
+    'django.contrib.humanize',
     'django_filters',
     'django_apscheduler',
     'news.apps.NewsConfig',
@@ -48,6 +52,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.yandex',
+
 ]
 
 MIDDLEWARE = [
@@ -59,6 +64,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
 SITE_ID = 1
@@ -122,7 +129,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
+
+LANGUAGES = [
+    ('en-us', 'English'),
+    ('ru', 'Русский'),
+]
 
 TIME_ZONE = 'UTC'
 
@@ -178,6 +190,10 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Europe/Moscow'
 
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale')
+]
+
 CACHES = {
     'default': {
         'TIMEOUT': 60,
@@ -189,66 +205,48 @@ CACHES = {
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'style' : '{',
+    'style': '{',
     'formatters': {
         'console': {
-            'format': '{asctime} {levelname} {message}',
-            'style': '{',
-        },
-        'warning': {
-            'format': '{asctime} {levelname} {message} {pathname}',
+            'format': '{asctime} {levelname} {message}' if DEBUG else '{asctime} {levelname} {message} {pathname}',
             'style': '{',
         },
         'general': {
             'format': '{asctime} {levelname} {module} {message}',
+            'style': '{',
+        },
+        'warnings': {
+            'format': '{asctime} {levelname} {message} {pathname}',
             'style': '{',
         },
         'errors': {
             'format': '{asctime} {levelname} {message} {pathname} {exc_info}',
             'style': '{',
         },
-
         'security': {
             'format': '{asctime} {levelname} {module} {message}',
             'style': '{',
         },
     },
-    'filters': {
-        'require_debug_true': {
-            '()': 'django.utils.log.RequireDebugTrue',
-        },
-        'require_debug_false': {
-            '()': 'django.utils.log.RequireDebugFalse',
-        },
-    },
     'handlers': {
         'console': {
-            'level': 'DEBUG',
-            'filters': ['require_debug_true'],
+            'level': 'DEBUG' if DEBUG else 'WARNING',
             'class': 'logging.StreamHandler',
             'formatter': 'console'
         },
         'general': {
             'level': 'INFO',
-            'filters': ['require_debug_false'],
             'class': 'logging.FileHandler',
             'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/general.log',
             'formatter': 'general'
         },
+        'warnings': {
+            'level': 'WARNING',
+            'class': 'logging.StreamHandler',
+            'formatter': 'warnings'
+        },
         'errors': {
             'level': 'ERROR',
-            'class': 'logging.FileHandler',
-            'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/errors.log',
-            'formatter': 'errors'
-        },
-        'errors': {
-            'level': 'CRITICAL',
-            'class': 'logging.FileHandler',
-            'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/errors.log',
-            'formatter': 'errors'
-        },
-        'errors': {
-            'level': 'CRITICAL',
             'class': 'logging.FileHandler',
             'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/errors.log',
             'formatter': 'errors'
@@ -256,46 +254,20 @@ LOGGING = {
         'security': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs', 'security.log'),
+            'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/security.log',
             'formatter': 'security'
         },
         'mail_admins': {
             'level': 'ERROR',
             'class': 'django.utils.log.AdminEmailHandler',
-            'filters': ['require_debug_false'],
             'formatter': 'errors'
         }
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'general'],
+            'handlers': ['console', 'general', 'warnings', 'errors', 'security', 'mail_admins'],
             'level': 'DEBUG',
             'propagate': True,
-        },
-        'django.request': {
-            'handlers': ['console', 'errors', 'mail_admins'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'django.server': {
-            'handlers': ['console', 'errors', 'mail_admins'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'django.template': {
-            'handlers': ['console', 'errors'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'django.db.backends': {
-            'handlers': ['console', 'errors'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'django.security': {
-            'handlers': ['console', 'security'],
-            'level': 'DEBUG',
-            'propagate': False,
         },
     }
 }
