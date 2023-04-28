@@ -8,3 +8,12 @@ Traceback (most recent call last):
   File "C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py", line 181, in test_error
     x = 1 / 0  # Это вызовет ошибку ZeroDivisionError
 ZeroDivisionError: division by zero
+2023-04-28 17:19:47,000 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-04-28 17:19:47,519 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-04-28 17:20:36,075 ERROR Ошибка деления на ноль C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x000001ED69163D80>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py", line 181, in test_error
+    x = 1 / 0  # Это вызовет ошибку ZeroDivisionError
+ZeroDivisionError: division by zero

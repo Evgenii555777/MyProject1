@@ -189,66 +189,48 @@ CACHES = {
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'style' : '{',
+    'style': '{',
     'formatters': {
         'console': {
-            'format': '{asctime} {levelname} {message}',
-            'style': '{',
-        },
-        'warning': {
-            'format': '{asctime} {levelname} {message} {pathname}',
+            'format': '{asctime} {levelname} {message}' if DEBUG else '{asctime} {levelname} {message} {pathname}',
             'style': '{',
         },
         'general': {
             'format': '{asctime} {levelname} {module} {message}',
+            'style': '{',
+        },
+        'warnings': {
+            'format': '{asctime} {levelname} {message} {pathname}',
             'style': '{',
         },
         'errors': {
             'format': '{asctime} {levelname} {message} {pathname} {exc_info}',
             'style': '{',
         },
-
         'security': {
             'format': '{asctime} {levelname} {module} {message}',
             'style': '{',
         },
     },
-    'filters': {
-        'require_debug_true': {
-            '()': 'django.utils.log.RequireDebugTrue',
-        },
-        'require_debug_false': {
-            '()': 'django.utils.log.RequireDebugFalse',
-        },
-    },
     'handlers': {
         'console': {
-            'level': 'DEBUG',
-            'filters': ['require_debug_true'],
+            'level': 'DEBUG' if DEBUG else 'WARNING',
             'class': 'logging.StreamHandler',
             'formatter': 'console'
         },
         'general': {
             'level': 'INFO',
-            'filters': ['require_debug_false'],
             'class': 'logging.FileHandler',
             'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/general.log',
             'formatter': 'general'
         },
+        'warnings': {
+            'level': 'WARNING',
+            'class': 'logging.StreamHandler',
+            'formatter': 'warnings'
+        },
         'errors': {
             'level': 'ERROR',
-            'class': 'logging.FileHandler',
-            'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/errors.log',
-            'formatter': 'errors'
-        },
-        'errors': {
-            'level': 'CRITICAL',
-            'class': 'logging.FileHandler',
-            'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/errors.log',
-            'formatter': 'errors'
-        },
-        'errors': {
-            'level': 'CRITICAL',
             'class': 'logging.FileHandler',
             'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/errors.log',
             'formatter': 'errors'
@@ -256,46 +238,20 @@ LOGGING = {
         'security': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs', 'security.log'),
+            'filename': 'C:/Users/Users/PyCharmProjects/MyProject1/NewsPortal/logs/security.log',
             'formatter': 'security'
         },
         'mail_admins': {
             'level': 'ERROR',
             'class': 'django.utils.log.AdminEmailHandler',
-            'filters': ['require_debug_false'],
             'formatter': 'errors'
         }
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'general'],
+            'handlers': ['console', 'general', 'warnings', 'errors', 'security', 'mail_admins'],
             'level': 'DEBUG',
             'propagate': True,
-        },
-        'django.request': {
-            'handlers': ['console', 'errors', 'mail_admins'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'django.server': {
-            'handlers': ['console', 'errors', 'mail_admins'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'django.template': {
-            'handlers': ['console', 'errors'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'django.db.backends': {
-            'handlers': ['console', 'errors'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'django.security': {
-            'handlers': ['console', 'security'],
-            'level': 'DEBUG',
-            'propagate': False,
         },
     }
 }

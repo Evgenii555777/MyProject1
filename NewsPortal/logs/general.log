@@ -7,3 +7,21 @@ NoneType: None
 NoneType: None
 2023-04-26 11:12:23,907 INFO views Тестовая запись в general.log
 2023-04-26 11:12:47,224 INFO autoreload C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\NewsPortal\settings.py changed, reloading.
+2023-04-28 17:19:46,521 INFO autoreload Watching for file changes with StatReloader
+2023-04-28 17:19:46,999 INFO views Info message
+2023-04-28 17:19:46,999 WARNING views Warning message
+2023-04-28 17:19:47,000 ERROR views Error message
+NoneType: None
+2023-04-28 17:19:47,519 CRITICAL views Critical message
+NoneType: None
+2023-04-28 17:20:36,075 ERROR views Ошибка деления на ноль
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py", line 181, in test_error
+    x = 1 / 0  # Это вызовет ошибку ZeroDivisionError
+ZeroDivisionError: division by zero
+2023-04-28 17:20:36,221 INFO basehttp "GET /news/test_error/ HTTP/1.1" 200 41
+2023-04-28 17:20:36,404 WARNING log Not Found: /favicon.ico
+2023-04-28 17:20:36,405 WARNING basehttp "GET /favicon.ico HTTP/1.1" 404 2434
+2023-04-28 17:21:11,257 INFO views Тестовая запись в general.log
+2023-04-28 17:21:11,260 INFO basehttp "GET /news/test_general_log/ HTTP/1.1" 200 48
+2023-04-28 17:21:25,816 INFO basehttp "GET /news/test-security-log/ HTTP/1.1" 200 60
