@@ -8,3 +8,1962 @@ Traceback (most recent call last):
   File "C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py", line 181, in test_error
     x = 1 / 0  # ��� ������� ������ ZeroDivisionError
 ZeroDivisionError: division by zero
+2023-05-10 09:27:14,390 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 09:27:14,610 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 12:23:01,718 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 12:23:02,240 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 12:25:40,914 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 12:25:41,214 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:11:15,892 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:11:16,009 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:11:29,787 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:11:29,831 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:11:38,221 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x0000019B6A240F40>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 13:11:38,406 ERROR "GET /news/news/ HTTP/1.1" 500 186707 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 13:16:07,371 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:16:07,607 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:16:18,008 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:16:18,120 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:16:31,653 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:16:31,703 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 13:16:36,581 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x000001C25D46FA00>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 13:16:36,652 ERROR "GET /news/news/ HTTP/1.1" 500 186707 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 13:16:38,179 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x000001C25D28F140>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 13:16:38,270 ERROR "GET /news/news/ HTTP/1.1" 500 186707 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 13:16:49,146 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x000001C25D3C0200>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 13:16:49,224 ERROR "GET /news/news/ HTTP/1.1" 500 186707 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 13:20:06,285 ERROR Internal Server Error: /news/search/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_category.name_en_us'), <traceback object at 0x000001C25D375DC0>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_category.name_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\forms\utils.py", line 84, in as_p
+    return self.render(self.template_name_p)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\forms\utils.py", line 75, in render
+    return mark_safe(renderer.render(template, context))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\forms\renderers.py", line 29, in render
+    return template.render(context, request=request).strip()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\html.py", line 419, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\forms\boundfield.py", line 99, in as_widget
+    return widget.render(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\forms\widgets.py", line 280, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\forms\widgets.py", line 733, in get_context
+    context = super().get_context(name, value, attrs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\forms\widgets.py", line 692, in get_context
+    context["widget"]["optgroups"] = self.optgroups(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\forms\widgets.py", line 632, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django_filters\fields.py", line 246, in __iter__
+    yield from iterable
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\forms\models.py", line 1409, in __iter__
+    for obj in queryset:
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 512, in _iterator
+    yield from iterable
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_category.name_en_us
+2023-05-10 13:20:06,531 ERROR "GET /news/search/ HTTP/1.1" 500 310910 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 13:20:20,491 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x000001C25D28FB40>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 13:20:20,759 ERROR "GET /news/news/ HTTP/1.1" 500 186570 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 13:40:49,431 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x000001C25E7658C0>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 13:40:50,388 ERROR "GET /news/news/ HTTP/1.1" 500 186707 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 14:39:02,695 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 14:39:03,129 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 14:39:09,686 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x00000210581D8B00>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 14:39:10,935 ERROR "GET /news/news/ HTTP/1.1" 500 186707 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 14:42:15,653 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x0000021058084080>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 14:42:15,842 ERROR "GET /news/news/ HTTP/1.1" 500 186570 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 14:47:52,090 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x00000210581E41C0>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 14:47:52,174 ERROR "GET /news/news/ HTTP/1.1" 500 186570 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 14:53:09,597 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 14:53:09,671 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 14:54:41,101 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x00000258E8F22C00>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 14:54:41,167 ERROR "GET /news/news/ HTTP/1.1" 500 186570 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 15:48:20,902 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 15:48:21,028 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 15:48:57,013 ERROR Internal Server Error: /admin/news/postcategory/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x0000021BF58EAF40>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\options.py", line 669, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\options.py", line 671, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: PostCategory has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 189, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'postThroudh'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\utils.py", line 284, in lookup_field
+    value = attr()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\models.py", line 90, in __str__
+    return f'{self.postThroudh}'
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 207, in __get__
+    rel_obj = self.get_object(instance)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 170, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 646, in get
+    num = len(clone)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 15:48:57,125 ERROR "GET /admin/news/postcategory/ HTTP/1.1" 500 529227 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 15:49:17,893 ERROR Internal Server Error: /admin/news/mymodel/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such table: news_mymodel'), <traceback object at 0x0000021BF6E0BD80>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: news_mymodel
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\options.py", line 1932, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\options.py", line 834, in get_changelist_instance
+    return ChangeList(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\views\main.py", line 123, in __init__
+    self.get_results(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\views\main.py", line 279, in get_results
+    result_count = paginator.count
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\paginator.py", line 96, in count
+    return c()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 621, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\query.py", line 559, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\query.py", line 544, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: news_mymodel
+2023-05-10 15:49:17,928 ERROR "GET /admin/news/mymodel/ HTTP/1.1" 500 176988 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 15:49:21,039 ERROR Internal Server Error: /admin/news/comment/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_comment.text_en_us'), <traceback object at 0x0000021BF5822740>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_comment.text_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\options.py", line 2069, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_comment.text_en_us
+2023-05-10 15:49:21,082 ERROR "GET /admin/news/comment/ HTTP/1.1" 500 158780 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 15:49:24,077 ERROR Internal Server Error: /admin/news/post/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x0000021BF5C73700>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\options.py", line 2069, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 15:49:24,109 ERROR "GET /admin/news/post/ HTTP/1.1" 500 159514 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 15:50:37,279 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 15:50:37,378 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 15:50:59,460 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 15:50:59,531 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 15:51:32,858 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 15:51:32,946 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 15:51:45,231 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x00000258D6798680>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 15:51:45,294 ERROR "GET /news/news/ HTTP/1.1" 500 186570 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 15:52:11,872 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x00000258D6617FC0>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 15:52:11,952 ERROR "GET /news/news/ HTTP/1.1" 500 186570 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 15:55:27,037 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x00000258D6624E80>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 15:55:27,828 ERROR "GET /news/news/ HTTP/1.1" 500 186707 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 15:55:31,979 ERROR Internal Server Error: /news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x00000258D6904440>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 15:55:32,069 ERROR "GET /news/ HTTP/1.1" 500 186520 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 15:57:12,956 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 15:57:13,116 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 15:57:24,508 ERROR Internal Server Error: /news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x00000201B3D887C0>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 15:57:24,628 ERROR "GET /news/ HTTP/1.1" 500 186520 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 16:01:09,883 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 16:01:09,962 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 16:01:42,060 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 16:01:42,171 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 16:01:46,413 ERROR Internal Server Error: /news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x00000163D2827340>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 16:01:46,488 ERROR "GET /news/ HTTP/1.1" 500 186657 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 16:01:54,852 ERROR Internal Server Error: /admin/news/postcategory/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x00000163D2B52840>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\options.py", line 669, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\options.py", line 671, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: PostCategory has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 189, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'postThroudh'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\contrib\admin\utils.py", line 284, in lookup_field
+    value = attr()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\models.py", line 90, in __str__
+    return f'{self.postThroudh}'
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 207, in __get__
+    rel_obj = self.get_object(instance)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 170, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 646, in get
+    num = len(clone)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 16:01:54,994 ERROR "GET /admin/news/postcategory/ HTTP/1.1" 500 529206 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 16:08:53,308 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 16:08:53,513 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 16:09:13,668 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x000001F620EC6600>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 16:09:13,764 ERROR "GET /news/news/ HTTP/1.1" 500 186570 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 16:22:36,931 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 16:22:37,090 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 16:22:51,429 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("<ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template."), <traceback object at 0x0000016DC2C6FF40>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2023-05-10 16:22:51,467 ERROR "GET /news/news/ HTTP/1.1" 500 137942 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 16:30:00,145 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x0000016DC2CB3200>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 16:30:00,207 ERROR "GET /news/news/ HTTP/1.1" 500 186675 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 16:30:52,600 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 16:30:52,663 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 16:31:00,705 ERROR Internal Server Error: /news/news/ C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\utils\log.py (<class 'django.db.utils.OperationalError'>, OperationalError('no such column: news_post.title_en_us'), <traceback object at 0x000001FD6FB257C0>)
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: news_post.title_en_us
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: news_post.title_en_us
+2023-05-10 16:31:00,777 ERROR "GET /news/news/ HTTP/1.1" 500 186675 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None

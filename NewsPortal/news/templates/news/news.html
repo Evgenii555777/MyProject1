@@ -1,10 +1,22 @@
-
 {% extends 'flatpages/default.html' %}
-{% load custom_filters %}
-{% for post in pos %}
+{% load i18n custom_filters %}
 
+<ul>
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+{% for language in languages %}
+    <li>
+    <a href="{% url 'set_language' %}"
+       class="{% if language.code == LANGUAGE_CODE %}selected{% endif %}"
+       >{{ language.name_local }} ({{ language.code }})</a>
+    </li>
+{% endfor %}
+</ul>
+
+{% for post in pos %}
 {% block title %}
-<p><h1>{{ post.title }}</a></h1>
+<p><h1>{{ post.title }}</h1></p>
 {% endblock title %}
 
 {% block content %}

@@ -32,6 +32,6 @@ msgstr "Это вспомогательный текст"
 msgid "Hello world"
 msgstr "Привет мир"
 
-#: .\templates\news\index2.html:28
+#: .\news\templates\news\index2.html:28
 msgid "Check out my new cool translation"
 msgstr "Оцени мой классный перевод"
