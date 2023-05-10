@@ -3559,3 +3559,7 @@ Traceback (most recent call last):
     return Database.Cursor.execute(self, query, params)
 django.db.utils.OperationalError: no such column: news_category.name_en_us
 2023-05-05 18:02:57,020 ERROR "GET /admin/news/category/ HTTP/1.1" 500 157167 C:\Users\Users\PyCharmProjects\MyProject1\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-05-10 09:15:56,091 ERROR Error message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
+2023-05-10 09:15:56,622 CRITICAL Critical message C:\Users\Users\PyCharmProjects\MyProject1\NewsPortal\news\views.py (None, None, None)
+NoneType: None
