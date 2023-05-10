@@ -2,8 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
 from django.urls import reverse
-from django.utils.translation import gettext as _
-from django.utils.translation import pgettext_lazy
 
 
 class Author(models.Model):
@@ -33,7 +31,7 @@ class Author(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=100, help_text=_('category name'))
+    name = models.CharField(max_length=64, unique=True)
     subscribers = models.ManyToManyField(User, related_name='categories', through='Subscriber')
 
     def __str__(self):
@@ -125,11 +123,4 @@ class Subscriber(models.Model):
         return f'{self.user}'
 
 
-class MyModel(models.Model):
-    name = models.CharField(max_length=100)
-    kind = models.ForeignKey(
-        Category,
-        on_delete=models.CASCADE,
-        related_name='kinds',
-        verbose_name=pgettext_lazy('help text for MyModel model', 'This is the help text'),
-    )
+
